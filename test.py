@@ -1,10 +1,10 @@
 import pandas as pd
 import json
 
-data1 = pd.read_csv('data.csv',header=-1)
+data1 = pd.read_csv('data_new.csv',header=-1)
 data1 = data1.drop(data1.columns[330], 1)
 
-data = data1.ix[0:500]
+data = data1.ix[0:800]
 data.head()
 #First 20 columns are cdf values (inputs). 20 for p1 then 20 for p2.
 #Next 310 columns are y values (outputs). For card 1, bet 0,0.1,...,3, then card 2 ... (10 cards, 30 sizes per card)
