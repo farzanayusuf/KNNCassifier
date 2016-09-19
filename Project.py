@@ -260,14 +260,14 @@ type(data_y)
 from sklearn.neighbors import KNeighborsClassifier
 #knn = KNeighborsClassifier()
 
-#knn = KNeighborsClassifier(n_neighbors=4, algorithm='ball_tree',
-          # metric=emd)
+knn = KNeighborsClassifier(n_neighbors=4, algorithm='ball_tree',
+          metric=emd_df_x)
 #knn = KNeighborsClassifier(n_neighbors=1, weights='uniform', algorithm='auto', p=2)
 #knn = KNeighborsClassifier(n_neighbors=1)
 #knn =  knn_predict(data_y.ix[0], data_X, 3)
 # starting with k=1
 # this creates the classifier
-knn = KNeighborsClassifier(n_neighbors=1, weights='uniform', p=2)
+#knn = KNeighborsClassifier(n_neighbors=1, weights='uniform', p=2)
 
 
 # In[44]:
